@@ -1,13 +1,42 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/jost-book.woff2), url(../fonts/jost-book.woff);
 }
-html{
-    font-size: 62.5%;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    font-size: 1.8rem;
-    line-height: 1.1;
-    background-color: brown;
+
+html {
+  font-size: 62.5%;
 }
+
+body {
+  font-size: 2.4rem;
+  font-family: "Jost";
+  line-height: 1.5;
+  background-color: #ca774a;
+  color: white;
+}
+
+main {
+  max-width: 150rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+main section {
+  max-width: 50rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+main section img {
+  margin-bottom: 3rem;
+}
+main section p {
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
