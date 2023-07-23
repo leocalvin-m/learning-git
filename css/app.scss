@@ -1,0 +1,54 @@
+@import "typography";
+
+$primary-color:red;
+
+$body-font:"Jost";
+
+@mixin marginBottom($margin){
+    margin-bottom: $margin;
+}
+
+@mixin centerDiv($height){
+    display: grid;
+    place-items: center;
+    height: $height;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2.4rem;
+    font-family: $body-font;
+    line-height: 1.5;
+    background-color:$primary-color;
+    color: #ffff;
+}
+main{
+    max-width: 150rem;
+    @include centerDiv(100vh);   
+
+    section{
+        max-width: 50rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        // gap: 1.2rem;
+        img{
+            // margin-bottom: 3rem;
+            @include marginBottom(3rem);
+        }
+        p{
+            @include marginBottom(2rem);
+        }
+
+        
+    }
+    
+}
